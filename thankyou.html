@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>ขอบคุณสำหรับการสั่งซื้อ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url("https://static.vecteezy.com/system/resources/previews/040/139/916/non_2x/ai-generated-generative-ai-frame-of-food-waste-compost-and-soil-environmental-concept-white-background-biodegradable-kitchen-waste-composting-organic-food-photo.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      font-family: 'Noto Serif Thai', serif;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.8); /* เงาขาวโปร่งใส */
+      padding: 60px 20px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container text-center overlay">
+      <h1 class="mb-4">ขอขอบคุณลูกค้าทุกท่าน</h1>
+      <p class="lead">ระบบได้รับคำสั่งซื้อของคุณเรียบร้อยแล้ว</p>
+      <a href="Home.html" class="btn btn-primary mt-4">กลับหน้าแรก</a>
+    </div>
+  </div>
+
+<!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // เมื่อหน้า thankyou.html โหลดเสร็จ ให้ลบข้อมูลจากตะกร้า
+    $(document).ready(function() {
+      localStorage.removeItem('cart');
+    });
+  </script>
+</body>
+</html>
